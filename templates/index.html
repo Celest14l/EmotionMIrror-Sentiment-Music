@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>EmotionMirror</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- Load face-api.js library -->
+  <script src="https://cdn.jsdelivr/net/npm/face-api.js/dist/face-api.min.js"></script>
+</head>
+<body>
+  <h1>🎭 EmotionMirror</h1>
+
+  <div id="container">
+    <video id="video" width="480" height="360" autoplay muted></video>
+    <div id="info">
+      <!-- Step 1: Detect Mood -->
+      <button id="detectBtn">Detect My Mood</button>
+      
+      <!-- Step 2: Show Result and Play/Pause Controls -->
+      <div id="result-container" style="display:none;">
+        <p>Detected emotion: <span id="emotion">—</span></p>
+        
+        <!-- Player Controls -->
+        <div id="controls">
+          <button id="playBtn">Play Music</button>
+          <!-- New Pause Button - Hidden by default -->
+          <button id="pauseBtn" style="display:none;">Pause</button>
+        </div>
+        
+        <!-- Status message for loading/playing -->
+        <p id="statusMsg" style="font-size: 0.9em; color: #666; margin-top: 5px;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard HTML5 Audio Player -->
+  <audio id="audioPlayer" style="display:none;"></audio>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

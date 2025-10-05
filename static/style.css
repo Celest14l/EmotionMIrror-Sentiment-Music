@@ -1,0 +1,4 @@
+body { background:#111; color:#fff; font-family:Arial,Helvetica,sans-serif; text-align:center; padding:20px; }
+video { border-radius:8px; background:#000; }
+#info { display:inline-block; vertical-align:top; margin-left:20px; text-align:left; }
+button { background:#1db954; color:white; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; }
